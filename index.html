@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="르탄이 - 프로필 링크" />
+        <meta property="og:description" content="어서와 코딩은 처음이지?" />
+        <meta property="og:image" content="공유할 이미지" />
+        <title>르탄이 - 프로필 링크</title>
+        <style>
+            /* 글꼴 변경해주기 */
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                    font-family: "Pretendard",serif;
+                }
+
+            body {
+                background-color: #002B5B;
+            }
+            .profile{
+                width: 100px;
+                height: 100px;
+
+                border-radius: 100%;
+
+                border : 2px solid #F5EFE6;
+
+                background-image: url('profile.png');
+                background-position: center;
+                background-size : cover;
+            }
+            .main{
+                color:white;
+                font-size : 20px;
+
+                margin-top: 25px;
+                margin-bottom: 7px;
+            }
+            .sub{
+                color:white;
+                font-size : 14px;
+                margin-top: 0px;
+                margin-bottom: 4px;
+            }
+            .sub2{
+                color:white;
+                font-size : 11px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            .wrap{
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                /* 글자를 가운데로 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a {
+                width : 300px;
+                height : 50px;
+
+                background-color: white;
+                border-radius: 8px;
+
+                /* 아래 공간에 여백 주기 */
+                margin-bottom : 10px;
+
+                font-size : 14px;
+                font-weight: bold;
+                color : #002B5B;
+
+                /* 글자를 가운데로 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                /* 링크<a 태그> 에 줄 없애주기 */
+                text-decoration: none;
+
+                /* 그림자 영역 확인 */
+                box-shadow: 3px 3px 5px 0px black;
+            }
+            /* 커서를 가져다 갔을 때, 색깔 처리 */
+            .wrap > a:hover {
+                background-color: #f2f2f2;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="profile"></div>
+            <h1 class="main">김혜민</h1>
+            <p class="sub">Data analyst</p>
+            <p class="sub2">✉️ hyeming155@gmail.com</p>
+            <a target="_blank" href="https://hyemin-king.notion.site/Introduce-Myself-a278b967bd124db7b73e511a0da63341">💎Resume</a>
+            <a target="_blank" href="https://coo-coo2021.tistory.com/">BLOG | 공부 기록</a>
+            <a target="_blank" href="https://www.linkedin.com/in/hyemin-kim-524565209/">🙋🏻‍♂️linkedin</a>
+            <a target="_blank" href="https://github.com/hyeming-king">GitHub</a>
+        </div>
+    </body>
+</html>
